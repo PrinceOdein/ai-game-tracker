@@ -1,0 +1,18 @@
+[
+    {
+        "game": "Apex Legends",
+        "timestamp": "2025-07-08T23:59:00",
+        "duration": 45,
+        "kills": 10,
+        "deaths": 5,
+        "notes": "Played with new weapon"
+    },
+    {
+        "game": "Call of Duty: Black Ops",
+        "timestamp": "2025-07-09T16:22:29.034469",
+        "duration": 120,
+        "kills": 129,
+        "deaths": 23,
+        "notes": "Used new strategy"
+    }
+]

@@ -1,6 +1,7 @@
 import json
 from datetime import datetime, timedelta
 from collections import defaultdict
+import os
 
 DATA_FILE = "storage/sessions.json"
 
@@ -45,3 +46,20 @@ def get_summary(game_name="Apex Legends", days=7):
 """
 
     return response
+
+import os  # Add this import if it’s not already there
+
+def export_summary(game_name="Apex Legends", days=7, filename="summary_export.txt"):
+    # Ensure exports folder exists
+    os.makedirs("exports", exist_ok=True)
+
+    # Build full path
+    filepath = os.path.join("exports", filename)
+
+    summary_text = get_summary(game_name, days)
+
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(summary_text)
+
+    print(f"📁 Summary exported to {filepath}")
+

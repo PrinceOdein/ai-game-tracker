@@ -2,6 +2,7 @@ import json
 import os
 from datetime import datetime
 from utils.summary import get_summary
+from utils.summary import export_summary
 
 DATA_FILE = "storage/sessions.json"
 
@@ -54,6 +55,7 @@ def main():
     print("1. Log session")
     print("2. View session history")
     print("3. View 7-Day Summary")
+    print("4. Export 7-Day Summary to File")
     print("0. Exit")
     choice = input("Choose an option: ").strip()
 
@@ -64,6 +66,11 @@ def main():
     elif choice == "3":
         game = input("Enter your game name: ")
         print(get_summary(game))
+    elif choice == "4":
+        game = input("Enter game name: ")
+        filename = input("Enter export filename (e.g., apex_summary.txt): ").strip()
+        export_summary(game, 7, filename or "summary_export.txt")
+
     elif choice == "0":
         print("Bye.")
     else:

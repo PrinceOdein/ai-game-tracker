@@ -1,11 +1,20 @@
-# Bytecode
+# ─── Python Bytecode ────────────────
 __pycache__/
 *.pyc
 
-# Storage files
-storage/sessions.json
+# ─── Exported Summaries Folder ─────
+exports/
 
-# OS & Editor
+# ─── Environment & Tooling ─────────
+.env
+.venv/
+*.log
+
+# ─── System & Editor ───────────────
 .DS_Store
 .vscode/
 .idea/
+Thumbs.db
+
+# ─── Keep requirements.txt ─────────
+!requirements.txt
