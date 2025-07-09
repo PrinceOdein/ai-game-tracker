@@ -1,0 +1,11 @@
+# Bytecode
+__pycache__/
+*.pyc
+
+# Storage files
+storage/sessions.json
+
+# OS & Editor
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,10 @@
+# No external libraries required yet
+# Standard Library: json, datetime, os
+
+# Future additions might include:
+# openai==1.0.0         # For GPT-powered summaries
+# matplotlib==3.8.4     # For stat visualizations
+# requests==2.32.0      # For Discord webhooks or API calls
+# discord.py==2.3.2     # If using Discord bots
+
+#If you install any libraries please write it here
